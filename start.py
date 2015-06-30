@@ -53,6 +53,10 @@ allow """+login_proxy+"""
 	return "ok"
 
 create_conf_proxy("'''+str(ip)+'","'+str(pr_user)+'","'+str(pr_pass)+'''")
+
+b = os.system("""
+	reboot
+	""")
 '''
 	create_file.writelines(python_file)
 	create_file.close()
