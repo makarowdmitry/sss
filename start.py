@@ -16,29 +16,30 @@ def create_script_install_proxy(ip,pr_user,pr_pass):
 	python_file = '''#! /usr/bin/env python
 import os
 
-# a = os.system("""
-# 	service iptables stop
-# 	service iptables save
-# 	chkconfig iptables off
-# 	cd /usr/local/src
-# 	yum update -y
-# 	yum install -y mc nano gcc make
-# 	wget http://3proxy.ru/0.6.1/3proxy-0.6.1.tgz
-# 	tar -xvzf 3proxy-0.6.1.tgz
-# 	cd 3proxy-0.6.1
-# 	make -f Makefile.Linux
-# 	mkdir /usr/local/etc/3proxy
-# 	mkdir /usr/local/etc/3proxy/bin
-# 	mkdir /usr/local/etc/3proxy/logs
-# 	mkdir /usr/local/etc/3proxy/stat
-# 	cp src/3proxy /usr/local/etc/3proxy/bin
-# 	cp ./scripts/rc.d/proxy.sh /etc/init.d/3proxy
-# 	chkconfig 3proxy on
-# 	""")
+a = os.system("""
+	service iptables stop
+	service iptables save
+	chkconfig iptables off
+	cd /usr/local/src
+	yum update -y
+	yum install -y mc nano gcc make wget
+	wget http://3proxy.ru/0.6.1/3proxy-0.6.1.tgz
+	tar -xvzf 3proxy-0.6.1.tgz
+	cd 3proxy-0.6.1
+	make -f Makefile.Linux
+	mkdir /usr/local/etc/3proxy
+	mkdir /usr/local/etc/3proxy/bin
+	mkdir /usr/local/etc/3proxy/logs
+	mkdir /usr/local/etc/3proxy/stat
+	cp src/3proxy /usr/local/etc/3proxy/bin
+	cp ./scripts/rc.d/proxy.sh /etc/init.d/3proxy
+	chkconfig 3proxy on
+	""")
 
 
 def create_conf_proxy(ip_serv,login_proxy,pass_proxy):
-	os.chdir("/home/tp")
+	os.chdir("/usr/local/etc/3proxy")
+	# os.chdir("/home/tp")
 	proxy_conf = """daemon
 auth strong
 users """+login_proxy+":CL:"+pass_proxy+"""
@@ -64,10 +65,34 @@ for vps in data_vps:
 	vps_lst = vps.split(',')
 	create_script_install_proxy(vps_lst[0],PROXY_USER,PROXY_PASS)
 	'''Подключиться к ssh. Установить python. Залить скрипт python. Исполнить. Отключиться.
-
 	'''
+	
+	import paramiko
 
-	os.system('python install_socks.py')
+	client = paramiko.SSHClient()
+	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	client.connect(vps_lst[0], username=vps_lst[1], password=vps_lst[2])
+	stdin, stdout, stderr = client.exec_command('yum install python')
+	client.close()
+
+	transport = paramiko.Transport((vps_lst[0], 22))
+	transport.connect(username=vps_lst[1], password=vps_lst[2])
+	sftp = paramiko.SFTPClient.from_transport(transport)
+
+	remotepath = '/root/install_socks.py'
+	localpath = os.path.join(os.getcwd(),'install_socks.py')
+	sftp.put(localpath, remotepath)
+	sftp.close()
+	transport.close()
+
+	client = paramiko.SSHClient()
+	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+	client.connect(vps_lst[0], username=vps_lst[1], password=vps_lst[2])
+	stdin, stdout, stderr = client.exec_command('python install_socks.py')
+	client.close()
+
+
+	# os.system('python install_socks.py')
 	os.remove('install_socks.py')
 
 # a = os.system("""
