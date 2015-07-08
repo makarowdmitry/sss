@@ -6,7 +6,13 @@
 # 2. заливаем его на сервер и исполняем
 # 3. Чекаем все прокси
 
+
+
+
+
+import re
 import os
+import paramiko
 
 PROXY_USER = "goemailgo"
 PROXY_PASS ="q8uir"
@@ -66,38 +72,51 @@ b = os.system("""
 data_vps = open('data_vps.txt','r').readlines()
 
 for vps in data_vps:
-	vps_lst = vps.split(',')
-	create_script_install_proxy(vps_lst[0],PROXY_USER,PROXY_PASS)
-	'''Подключиться к ssh. Установить python. Залить скрипт python. Исполнить. Отключиться.
-	'''
-	
-	import paramiko
+	try:
+		vps_lst = vps.split(',')
+		create_script_install_proxy(vps_lst[0],PROXY_USER,PROXY_PASS)
 
-	client = paramiko.SSHClient()
-	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-	client.connect(vps_lst[0], username=vps_lst[1], password=vps_lst[2])
-	stdin, stdout, stderr = client.exec_command('yum install python')
-	client.close()
-
-	transport = paramiko.Transport((vps_lst[0], 22))
-	transport.connect(username=vps_lst[1], password=vps_lst[2])
-	sftp = paramiko.SFTPClient.from_transport(transport)
-
-	remotepath = '/root/install_socks.py'
-	localpath = os.path.join(os.getcwd(),'install_socks.py')
-	sftp.put(localpath, remotepath)
-	sftp.close()
-	transport.close()
-
-	client = paramiko.SSHClient()
-	client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-	client.connect(vps_lst[0], username=vps_lst[1], password=vps_lst[2])
-	stdin, stdout, stderr = client.exec_command('python install_socks.py')
-	client.close()
+		host_remote = re.sub("^\s+|\n|\r|\s+$", '', vps_lst[0])
+		username_serv = re.sub("^\s+|\n|\r|\s+$", '', vps_lst[1])
+		pass_serv = re.sub("^\s+|\n|\r|\s+$", '', vps_lst[2])
+		
+		print host_remote+' - ok'
+		
 
 
-	# os.system('python install_socks.py')
-	os.remove('install_socks.py')
+		client = paramiko.SSHClient()
+		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+		client.connect(host_remote, username=username_serv, password=pass_serv,port=22)
+		stdin, stdout, stderr = client.exec_command('yum install python')
+		client.close()
+
+		transport = paramiko.Transport((host_remote, 22))
+		transport.connect(username=username_serv, password=pass_serv)
+		sftp = paramiko.SFTPClient.from_transport(transport) 
+
+		remotepath = '/root/install_socks.py'
+		localpath = os.path.join(os.getcwd(),'install_socks.py')
+		sftp.put(localpath, remotepath)
+		sftp.close()
+		transport.close()
+
+		client = paramiko.SSHClient()
+		client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+		client.connect(host_remote, username=username_serv, password=pass_serv,port=22)
+		stdin, stdout, stderr = client.exec_command('python install_socks.py')
+		client.close()
+
+
+		# os.system('python install_socks.py')
+		os.remove('install_socks.py')
+
+		add_ams_socks_str = host_remote+',3128,SOCKS5,'+PROXY_USER+','+PROXY_PASS+'\n'
+		add_ams_socks = open('ams.txt','a')
+		add_ams_socks.write(add_ams_socks_str)
+		add_ams_socks.close()
+	except:
+		print host_remote+' - error'
+		continue
 
 # a = os.system("""
 # 	service iptables stop
