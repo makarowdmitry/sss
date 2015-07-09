@@ -1,0 +1,434 @@
+Public IP: 85.143.218.48
+Public IPV6:
+2a04:ac00:1:39d8:5054:ff:fe00:3a8b/64
+Root pass: Gs85eUyi
+
+
+
+Public IP: 85.143.218.107
+Public IPV6:
+2a04:ac00:1:39d9:5054:ff:fe00:3a8d/64
+Root pass: aklnX16n
+
+
+
+Public IP: 85.143.218.125
+Public IPV6:
+2a04:ac00:1:39da:5054:ff:fe00:3a8f/64
+Root pass: cr8L0aAq
+
+
+
+
+
+
+Public IP: 85.143.218.180
+Public IPV6:
+2a04:ac00:1:39de:5054:ff:fe00:3a97/64
+Root pass: 2L14gPj1
+
+
+Public IP: 85.143.218.179
+Public IPV6:
+2a04:ac00:1:39dd:5054:ff:fe00:3a95/64
+Root pass: vG8eqWy7
+
+
+Public IP: 85.143.218.161
+Public IPV6:
+2a04:ac00:1:39dc:5054:ff:fe00:3a93/64
+Root pass: e7L77uuJ
+
+
+Public IP: 85.143.218.152
+Public IPV6:
+2a04:ac00:1:39db:5054:ff:fe00:3a91/64
+Root pass: nm8gTVxF
+
+
+Public IP: 85.143.218.181
+Public IPV6:
+2a04:ac00:1:39df:5054:ff:fe00:3a99/64
+Root pass: jxSA2BDP
+
+
+
+
+Public IP: 85.143.218.182
+Public IPV6:
+2a04:ac00:1:39e0:5054:ff:fe00:3a9b/64
+Root pass: quC3ZVV6
+
+
+Public IP: 85.143.218.183
+Public IPV6:
+2a04:ac00:1:39e1:5054:ff:fe00:3a9c/64
+Root pass: hzE6cpzy
+
+
+
+
+
+Public IP: 85.143.218.188
+Public IPV6:
+2a04:ac00:1:39e5:5054:ff:fe00:3aa5/64
+Root pass: 1mZNyqtd
+
+
+Public IP: 85.143.218.189
+Public IPV6:
+2a04:ac00:1:39e6:5054:ff:fe00:3aa7/64
+Root pass: 23tRsU6m
+
+
+Public IP: 85.143.218.192
+Public IPV6:
+2a04:ac00:1:39e9:5054:ff:fe00:3aad/64
+Root pass: 21Qx5M6c
+
+
+Public IP: 85.143.218.191
+Public IPV6:
+2a04:ac00:1:39e8:5054:ff:fe00:3aab/64
+Root pass: uNbig3mD
+
+
+Public IP: 85.143.218.190
+Public IPV6:
+2a04:ac00:1:39e7:5054:ff:fe00:3aa9/64
+Root pass: ra051258
+
+
+Public IP: 85.143.218.185
+Public IPV6:
+2a04:ac00:1:39e3:5054:ff:fe00:3aa1/64
+Root pass: xfGsY9uJ
+
+
+Public IP: 85.143.218.186
+Public IPV6:
+2a04:ac00:1:39e4:5054:ff:fe00:3aa3/64
+Root pass: YCu345mJ
+
+
+Public IP: 85.143.218.184
+Public IPV6:
+2a04:ac00:1:39e2:5054:ff:fe00:3a9f/64
+Root pass: ArhniS01
+
+
+Public IP: 85.143.218.213
+Public IPV6:
+2a04:ac00:1:39fe:5054:ff:fe00:3ad7/64
+Root pass: UJirjnyV
+
+
+
+Public IP: 85.143.218.214
+Public IPV6:
+2a04:ac00:1:39ff:5054:ff:fe00:3ad9/64
+Root pass: g6EH3U7D
+
+++++++++
+
+
+
+1
+
+Public IP: 85.143.218.207
+Public IPV6:
+2a04:ac00:1:39f8:5054:ff:fe00:3aca/64
+Root pass: 3Qt7F9uR
+
+2
+
+Public IP: 85.143.218.208
+Public IPV6:
+2a04:ac00:1:39f9:5054:ff:fe00:3acd/64
+Root pass: EhF83pJ0
+
+3
+
+Public IP: 85.143.218.209
+Public IPV6:
+2a04:ac00:1:39fa:5054:ff:fe00:3acf/64
+Root pass: 3jj3Gg8w
+
+4
+
+Public IP: 85.143.218.206
+Public IPV6:
+2a04:ac00:1:39f7:5054:ff:fe00:3ac9/64
+Root pass: gatnehsL
+
+5
+
+Public IP: 85.143.218.210
+Public IPV6:
+2a04:ac00:1:39fb:5054:ff:fe00:3ad1/64
+Root pass: JGFJC7c2
+
+6
+	
+15:49:15	
+		
+Public IP: 85.143.218.211
+Public IPV6:
+2a04:ac00:1:39fc:5054:ff:fe00:3ad2/64
+Root pass: JAy08387
+	
+	
+		
+7
+
+Public IP: 85.143.218.212
+Public IPV6:
+2a04:ac00:1:39fd:5054:ff:fe00:3ad5/64
+Root pass: 3rej68XQ
+	
+	
+		
+8
+
+Public IP: 85.143.218.203
+Public IPV6:
+2a04:ac00:1:39f5:5054:ff:fe00:3ac5/64
+Root pass: y7yZxLM9
+	
+	
+		
+9
+
+Public IP: 85.143.218.205
+Public IPV6:
+2a04:ac00:1:39f6:5054:ff:fe00:3ac7/64
+Root pass: 1Ywdhnil
+	
+	
+		
+10
+
+Public IP: 85.143.218.199
+Public IPV6:
+2a04:ac00:1:39f2:5054:ff:fe00:3abf/64
+Root pass: ByP52H9E
+	
+	
+	
+	
+Дмитрий
+11
+
+Public IP: 85.143.218.202
+Public IPV6:
+2a04:ac00:1:39f4:5054:ff:fe00:3ac2/64
+Root pass: db8mRJ3s
+
+12
+
+Public IP: 85.143.218.201
+Public IPV6:
+2a04:ac00:1:39f3:5054:ff:fe00:3ac1/64
+Root pass: XH7GjCmU
+
+13
+
+Public IP: 85.143.218.198
+Public IPV6:
+2a04:ac00:1:39f1:5054:ff:fe00:3abd/64
+Root pass: jBbkB86p
+
+14
+
+Public IP: 85.143.218.197
+Public IPV6:
+2a04:ac00:1:39f0:5054:ff:fe00:3abb/64
+Root pass: 4VcYVjdq
+
+
+		
+15!!
+
+Public IP: 85.143.218.196
+Public IPV6:
+2a04:ac00:1:39ef:5054:ff:fe00:3ab9/64
+Root pass: 9ZPg2P2F
+	
+	
+		
+16
+
+Public IP: 85.143.218.195
+Public IPV6:
+2a04:ac00:1:39ee:5054:ff:fe00:3ab7/64
+Root pass: 4yR3S27y
+	
+	
+		
+17
+
+Public IP: 85.143.218.193
+Public IPV6:
+2a04:ac00:1:39ec:5054:ff:fe00:3ab3/64
+Root pass: QnNHfvg6
+	
+	
+		
+18
+
+Public IP: 85.143.218.194
+Public IPV6:
+2a04:ac00:1:39ed:5054:ff:fe00:3ab5/64
+Root pass: zTR748ZH
+
+19
+
+Public IP: 85.143.218.178
+Public IPV6:
+2a04:ac00:1:39eb:5054:ff:fe00:3ab1/64
+Root pass: RiqdczyC
+
+20
+
+Public IP: 85.143.218.151
+Public IPV6:
+2a04:ac00:1:39ea:5054:ff:fe00:3aaf/64
+Root pass: 7xMsLmxw
+
+++++++++++++++++++++++++++++++++++++++++++++++
+
+1
+
+Public IP: 85.143.218.215
+Public IPV6:
+2a04:ac00:1:3a00:5054:ff:fe00:3adb/64
+Root pass: 938yQEBn
+
+2
+
+Public IP: 85.143.218.233
+Public IPV6:
+2a04:ac00:1:3a12:5054:ff:fe00:3afe/64
+Root pass: 7q38T2vN
+
+3
+
+Public IP: 85.143.218.234
+Public IPV6:
+2a04:ac00:1:3a13:5054:ff:fe00:3b01/64
+Root pass: 1YXW8Zjx
+
+4
+
+Public IP: 85.143.218.232
+Public IPV6:
+2a04:ac00:1:3a11:5054:ff:fe00:3afd/64
+Root pass: tRXc5gbU
+
+5
+
+Public IP: 85.143.218.231
+Public IPV6:
+2a04:ac00:1:3a10:5054:ff:fe00:3afa/64
+Root pass: zTq88KQ9
+
+6
+
+Public IP: 85.143.218.228
+Public IPV6:
+2a04:ac00:1:3a0d:5054:ff:fe00:3af5/64
+Root pass: KlC8Cmy5
+
+7
+
+Public IP: 85.143.218.229
+Public IPV6:
+2a04:ac00:1:3a0e:5054:ff:fe00:3af7/64
+Root pass: w243RKye
+
+8
+
+Public IP: 85.143.218.230
+Public IPV6:
+2a04:ac00:1:3a0f:5054:ff:fe00:3af8/64
+Root pass: z0etv1Vi
+
+9
+
+Public IP: 85.143.218.227
+Public IPV6:
+2a04:ac00:1:3a0c:5054:ff:fe00:3af3/64
+Root pass: bS3MsnXU
+
+10
+
+Public IP: 85.143.218.226
+Public IPV6:
+2a04:ac00:1:3a0b:5054:ff:fe00:3aef/64
+Root pass: LZkaX57i
+11
+
+Public IP: 85.143.218.225
+Public IPV6:
+2a04:ac00:1:3a09:5054:ff:fe00:3aed/64
+Root pass: vTMY7bDY
+13
+
+Public IP: 85.143.218.223
+Public IPV6:
+2a04:ac00:1:3a08:5054:ff:fe00:3aeb/64
+Root pass: hll5S9v7
+12
+
+Public IP: 85.143.218.224
+Public IPV6:
+2a04:ac00:1:3a0a:5054:ff:fe00:3aee/64
+Root pass: wpRkDZ9B
+14
+
+Public IP: 85.143.218.221
+Public IPV6:
+2a04:ac00:1:3a06:5054:ff:fe00:3ae7/64
+Root pass: Ewt8Vyrc
+
+15
+
+Public IP: 85.143.218.222
+Public IPV6:
+2a04:ac00:1:3a07:5054:ff:fe00:3ae9/64
+Root pass: kKXXVxtu
+
+16
+
+Public IP: 85.143.218.220
+Public IPV6:
+2a04:ac00:1:3a05:5054:ff:fe00:3ae5/64
+Root pass: f81Jepnk
+
+17
+
+Public IP: 85.143.218.219
+Public IPV6:
+2a04:ac00:1:3a04:5054:ff:fe00:3ae3/64
+Root pass: M0VBtAag
+
+18
+
+Public IP: 85.143.218.217
+Public IPV6:
+2a04:ac00:1:3a02:5054:ff:fe00:3adf/64
+Root pass: MffuR5h3
+
+19
+
+Public IP: 85.143.218.218
+Public IPV6:
+2a04:ac00:1:3a03:5054:ff:fe00:3ae1/64
+Root pass: hmbv7T3f
+
+20
+
+Public IP: 85.143.218.216
+Public IPV6:
+2a04:ac00:1:3a01:5054:ff:fe00:3adc/64
+Root pass: pV119Ds5
